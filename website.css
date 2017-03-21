@@ -1,13 +1,13 @@
-<head>
+body{
 
-backcolor{
+	background-color: #ffffff;
+	}
 
-	color: #16EA87
-}
+.navbar{
+	background-color: #ffffff;
+	color: black;
+	border-bottom: white;
 
 
 
-#imgattr{
-	height: 100%;
-	width: 50%
 }
