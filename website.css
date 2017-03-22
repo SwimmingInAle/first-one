@@ -5,10 +5,12 @@ html,body{
 
 	}
 
-.navbar {
-	position: fixed;
+.navbar, .navbar-fixed-top .navbar-right {
+	position: fixed right;
 	top: 20px;
 	right: 30px;
+	margin: 0 auto;
+	width: 24%;
 	overflow: hidden;
     background-color: none; 
     float: right;
@@ -32,7 +34,10 @@ html,body{
 .navbar a{
 	color: #0066ff;
 	display: block;
+	text-align: center;
+	text-decoration: none;
 	padding: 10px;
+	float: right;
 
 }
 
@@ -63,7 +68,7 @@ html,body{
 	overflow-y: auto;
 }
 
-.main-text {
+.main-text { 
 	padding-top: 100px;
 	text-align: center;
 	color: #0066ff
