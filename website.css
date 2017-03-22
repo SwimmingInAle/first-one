@@ -1,12 +1,12 @@
 html,body{
 	margin: 0;
 	line-height: 1;
-	background-color: #000;
+	background-color: #22252C;
 
 	}
 
 .navbar {
-	position: fixed-top;
+	position: fixed;
 	top: 20px;
 	right: 30px;
 	overflow: hidden;
@@ -30,7 +30,7 @@ html,body{
 }
 
 .navbar a{
-	color: #ffffff;
+	color: #0066ff;
 	display: block;
 	padding: 10px;
 
@@ -57,7 +57,7 @@ html,body{
 	padding: 0 40px 0 40px;
 	width: 50%;
 	height: 100%;
-	background: #000;
+	background: #22252C;
 	z-index:99;
 	overflow: hidden;
 	overflow-y: auto;
@@ -77,6 +77,8 @@ html,body{
 
 .main-text h3{
 	font-family: "Open Sans";
+	color: #ffffff;
+	margin: 0 0 30px 30px;
 }
 
 .picture{
