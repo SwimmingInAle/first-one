@@ -1,13 +1,90 @@
-body{
+html,body{
+	margin: 0;
+	line-height: 1;
+	background-color: #000;
 
-	background-color: #ffffff;
 	}
 
-.navbar{
-	background-color: #ffffff;
-	color: black;
-	border-bottom: white;
+.navbar {
+	position: fixed-top;
+	top: 20px;
+	right: 30px;
+	overflow: hidden;
+    background-color: none; 
+    float: right;
+}
+.navbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0; 
+}
 
-
+.navbar li{
+	font-size: 16px;
+	font-weight:400;
+	font-family: "Josefin Sans", sans-serif;
+		letter-spacing: 1px;
+	display: inline-block;
+	margin-right: 25px
 
 }
+
+.navbar a{
+	color: #ffffff;
+	display: block;
+	padding: 10px;
+
+}
+
+.left-section{
+	background-color: #ebebf9;
+	position: absolute;
+
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.right-section {
+	position: absolute;
+	right: 0;
+	top: 100px;
+	bottom: 0;
+	padding: 0 40px 0 40px;
+	width: 50%;
+	height: 100%;
+	background: #000;
+	z-index:99;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.main-text {
+	padding-top: 100px;
+	text-align: center;
+	color: #0066ff
+}
+
+.main-text h1{
+	font-family:"Josefin Sans";
+	margin: 0 0 15px 0;
+
+}
+
+.main-text h3{
+	font-family: "Open Sans";
+}
+
+.picture{
+	background-color: #F1F1F1;
+	background: url(https://farm4.staticflickr.com/3792/32758578193_f4213cf406_h.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 600px){
+    .navbar li.right, 
+    .navbar li {float: none !important;}
