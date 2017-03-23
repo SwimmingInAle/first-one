@@ -40,47 +40,28 @@ html,body{
 	float: right;
 
 }
-
-.left-section{
-	background-color: #ebebf9;
-	position: absolute;
-
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	z-index: 1;
+#left{
+	padding-top: 950px;
+	background-color: #22252C;
+	height: 100%
 }
 
-.right-section {
-	position: absolute;
-	right: 0;
-	top: 100px;
-	bottom: 0;
-	padding: 0 40px 0 40px;
-	width: 50%;
-	height: 100%;
-	background: #22252C;
-	z-index:99;
-	overflow: hidden;
-	overflow-y: auto;
-}
-
-.main-text { 
+#right{
+	height: 970px;
 	padding-top: 100px;
 	text-align: center;
-	color: #0066ff
+	background-color: #22252C;
 }
 
-.main-text h1{
+
+#right h1{
 	font-family:"Josefin Sans";
+	color: #0066ff;
 	margin: 0 0 15px 0;
 
 }
 
-.main-text h3{
+#right h3{
 	font-family: "Open Sans";
 	color: #ffffff;
 	margin: 0 0 30px 30px;
