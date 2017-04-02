@@ -25,9 +25,9 @@ html,body{
 	width: 100.77%;
 	overflow: hidden;
     background-color: rgba( 0, 0, 0, .5 );
-    float: right;
+    float: right; 
 }
-.navbar ul{
+.navbar ul {
 	list-style-type: none;
 	margin: 0;
 	padding:0; 
@@ -43,6 +43,7 @@ html,body{
 	margin-right: 25px;
 	text-align: center;
 
+
 }
 
 .navbar a{
@@ -52,8 +53,53 @@ html,body{
 	text-decoration: none;
 	padding: 10px;
 	float: right;
-
+	
 }
+
+li > a {
+	position: relative;
+	color: #000;
+    text-decoration: none;
+}
+
+li > a:hover{
+	color: #e4e6e5;
+	background-color: none;
+	text-decoration: none;
+}
+
+li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 2px;
+	left: 0;
+	background-color: #ffff66;
+	visibility: hidden;
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.navbar a:visited, .navbar a:link {
+	color: #e4e6e5;
+	text-decoration: none;
+	
+}
+
+.navbar li:visited{
+	color: #e4e6e5;
+	text-decoration: none;
+}
+
+
 
 /* ---- Main Page ---- */
 
@@ -81,7 +127,8 @@ html,body{
 #right h3{
 	font-family: "Open Sans";
 	color: #e6F2FF;
-	margin: 0 0 30px 30px;
+	margin-left: 200px;
+	margin-right: 200px;
 
 }
 
