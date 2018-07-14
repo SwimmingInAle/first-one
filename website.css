@@ -1,20 +1,3 @@
-html,body{
-	margin: 0;
-	line-height: 1;
-	background-color: #22252C;
-
-	}
-
-/* ---- Table of Contents
-
-1) Navigation Bar
-2) Main Page
-3) About Me Page
-4) Experience Page
-5) Contact Page 
-
----- */
-
 /* ---- Navigation Bar ---- */
 
 .navbar, .navbar-fixed-top .navbar-right {
@@ -24,13 +7,15 @@ html,body{
 	margin: 0 auto;
 	width: 100.77%;
 	overflow: hidden;
-    background-color: rgba( 0, 0, 0, .5 );
-    float: right; 
+    background-color: #30cfd0;
+
+
+    float: right;
 }
 .navbar ul {
 	list-style-type: none;
 	margin: 0;
-	padding:0; 
+	padding:0;
 	text-align: center;
 }
 
@@ -53,17 +38,20 @@ html,body{
 	text-decoration: none;
 	padding: 10px;
 	float: right;
-	
+
 }
 
 li > a {
 	position: relative;
-	color: #000;
+	color: #00e68a;
     text-decoration: none;
+		display: inline;
+
+
 }
 
 li > a:hover{
-	color: #e4e6e5;
+	color:  #ffffff;
 	background-color: none;
 	text-decoration: none;
 }
@@ -75,23 +63,25 @@ li > a:before {
 	height: 2px;
 	bottom: 2px;
 	left: 0;
-	background-color: #ffff66;
+	background-color:  #2e2be2;
 	visibility: hidden;
 	transform: scaleX(0);
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+
 }
 
 li > a:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
+
 }
 
 .navbar a:visited, .navbar a:link {
 	color: #e4e6e5;
 	text-decoration: none;
-	
+
 }
 
 .navbar li:visited{
@@ -99,113 +89,361 @@ li > a:hover:before {
 	text-decoration: none;
 }
 
-
-
-/* ---- Main Page ---- */
-
-#left{
-	padding-top: 954px;
-	background-color: #22252C;
-	height: 100%
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
 }
 
-#right{
-	height: 974px;
-	padding-top: 100px;
-	text-align: center;
-	background-color: #22252C;
-}
-
-
-#right h1{
-	font-family:"Josefin Sans";
-	color: #0055ff;
-	margin: 0 0 15px 0;
-
-}
-
-#right h3{
-	font-family: "Open Sans";
-	color: #e6F2FF;
-	margin-left: 200px;
-	margin-right: 200px;
-
-}
-
-.picture{
-	background-color: #F1F1F1;
-	background: url(https://farm4.staticflickr.com/3792/32758578193_f4213cf406_h.jpg) no-repeat center center;
-	background-size: cover;
-}
-
-
-/* ---- About Me ---- */
-
-#about-left{
-	padding-top: 974px;
+canvas {
+	position: absolute;
+  top: 0px;
+	bottom: 1px;
+	left:0;
 	height: 100%;
-	background-color: #062F4F;
+  vertical-align: bottom;
 }
 
-#about-right{
-	height: 974px;
-	padding-top: 100px;
-	text-align: center;
-	background-color: #062F4F;
+
+
+/* Random Classes */
+
+.img{
+	height: 100%;
+	width: 100%
 
 }
 
-#about-right h1{
-	color: #ffff66;
+
+/* ---- particles.js container ---- */
+
+.particles-js {
+  position: absolute;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- Structure of Website ---- */
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);*/ /*cool Sunset*/
+	/* background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 60%, #30D2BE 100%); */
+	/* background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%); */
+	background-image: linear-gradient(-225deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0px;
+}
+
+.title{
+	display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.title h1{
 	font-family: "Josefin Sans";
-
+	font-size: 100px;
+	margin: 0 0 50px 0;
+	color: #ffffff
 }
 
-#about-right h3{
-	margin-left: 200px;
-	margin-right: 200px;
-	color: #b3daff
-}
-/* ---- Experience ---- */
-
-#experience-left{
-	padding-top: 974px;
-	height: 99%;
-	background-color: #328CC1;
+.title h2{
+	float: left;
+	font-family: "Josefin Sans";
+	font-size: 60px;
+	margin: 0 0 50px 0;
+	color: #ffffff
 }
 
-#experience-right{
-	height: 974px;
-	padding-top: 100px;
+.title h3{
+	font-family: "Josefin Sans";
+	font-size: 60px;
+	margin: 0 0 50px 0;
+	color: #ffffff
+}
+
+.title h4{
+	float: left;
+	font-family: "Josefin Sans";
+	font-size: 60px;
+	margin: 0 0 50px 0;
+	color: #004e92
+}
+
+.about {
+		background:#ffffff
+}
+
+.me{
+	  height: 110vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+.me h1{
 	text-align: center;
-	background-color: #328CC1;
+	font-family: "Josefin Sans";
+	font-weight: bold;
+}
+.me h2 {
+	text-align: justify;
+	font-family: "Josefin Sans";
+	font-weight: normal;
 }
 
-#experience-right h1{
-	color: #a67d63;
-	font-family: "Josefin Sans"; 
+.blurb-container {
+	display: flex;
+	flex-flow: column;
+	text-align: justify;
+	align-items: center;
+	max-height: 80%;
+	max-width: 50%;
+	padding-left: 25%
+
+
 }
 
-#experience-right h3{
+.align {
+display: inline-flex;
+flex-flow: row;
 
-	color: #000
+max-height: 80%;
+max-width: 50%;
+padding-left: 475px;
+}
+.link{
+	display: inline-flex;
+	padding: 0px;
+
+
+}
+.link a{
+
+	color: #7D26CD;
+	margin-right: 0px;
+	padding: 0px;
+
+
 }
 
-/* ---- Contact ---- */
-#contact-left{
-	padding-top: 100px;
-	height: 100%;
-	background-color: #e6F2FF;
+.link li{
+	float: left;
+	color: #7D26CD;
+	list-style-type: none;
+	display: inline-grid;
+
 }
 
-#contact-right{
-	height: 100px;
-	padding-top: 100px;
+.link a:visited {
+	color:#2e2be2;
+
+
+}
+
+.link li:visited{
+	color:#7D26CD;
+}
+
+.bus{
+	background-image: linear-gradient( to bottom, #0455a5 65%, #0269d1 100%);
+	display: flex;
+	padding: 0;
+}
+
+.system{
+	height: 70vh;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left: 200px
+}
+
+.system h1{
 	text-align: center;
-	background-color: #e6F2FF;
+	font-family: "Josefin Sans";
+	font-weight: bold;
+	color: #ffffff;
+	float:left;
+	font-size: 50px
+	padding: 0;
+}
+.system h2 {
+	text-align: center;
+	font-family: "Josefin Sans";
+	font-weight: normal;
+	float: left;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.system img{
+	float: right;
+	padding: 0;
+
 }
 
 
-@media screen and (max-width: 600px){
-    .navbar li.right, 
-    .navbar li {float: none !important;}
+
+.systemLink{
+	display: inline-flex;
+	padding: 0px;
+
+
+}
+.systemLink a{
+	color: #0582ff;
+	margin-right: 0px;
+	padding: 0px;
+
+
+
+}
+
+.systemLink li{
+	padding: 21px 20px 19px;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+	list-style-type: none;
+	font-family:"Josefin Sans";
+	font-size: 20px;
+
+
+}
+
+.systemLink a:visited {
+	color:#ffffff;
+
+
+}
+
+.systemLink li:visited{
+	color:#ffffff;
+}
+
+ .systemLink li > a:before {
+
+
+
+	bottom: 2px;
+	left: 0;
+	background-color:  #ffffff;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s; */
+
+}
+
+
+.work img{
+
+	width: 20%
+	height: 20%
+
+}
+
+.work ul {
+  white-space: nowrap;
+}
+.work ul, li {
+
+  list-style: none;
+  display: inline;
+}
+
+
+/* IMG CARSOL STUFF */
+
+#myImg {
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
