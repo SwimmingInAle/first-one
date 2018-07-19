@@ -43,7 +43,7 @@
 
 li > a {
 	position: relative;
-	color: #00e68a;
+	color: #2e2be2;
     text-decoration: none;
 		display: inline;
 
@@ -51,7 +51,7 @@ li > a {
 }
 
 li > a:hover{
-	color:  #ffffff;
+	color:  #2e2be2;
 	background-color: none;
 	text-decoration: none;
 }
@@ -79,13 +79,13 @@ li > a:hover:before {
 }
 
 .navbar a:visited, .navbar a:link {
-	color: #e4e6e5;
+	color: #2e2be2;
 	text-decoration: none;
 
 }
 
 .navbar li:visited{
-	color: #e4e6e5;
+	color: #2e2be2;
 	text-decoration: none;
 }
 
@@ -203,7 +203,7 @@ canvas {
 	display: flex;
 	flex-flow: column;
 	text-align: justify;
-	align-items: center;
+	align-items:flex-start;
 	max-height: 80%;
 	max-width: 50%;
 	padding-left: 25%
@@ -212,33 +212,38 @@ canvas {
 }
 
 .align {
-display: inline-flex;
+display: block;
+margin-left: auto;
+margin-right: auto;
 flex-flow: row;
+align-items: center;
 
 max-height: 80%;
 max-width: 50%;
-padding-left: 475px;
+/* padding-left: 475px; */
 }
 .link{
 	display: inline-flex;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 
 
 }
 .link a{
-
-	color: #7D26CD;
-	margin-right: 0px;
-	padding: 0px;
+	display: block;
+	color: #2e2be2;
+	margin: 0;
+	padding:0;
 
 
 }
 
 .link li{
-	float: left;
-	color: #7D26CD;
+	color: #2e2be2;
 	list-style-type: none;
 	display: inline-grid;
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -249,63 +254,52 @@ padding-left: 475px;
 }
 
 .link li:visited{
-	color:#7D26CD;
+	color:#2e2be2;
 }
 
 .bus{
 	background-image: linear-gradient( to bottom, #0455a5 65%, #0269d1 100%);
 	display: flex;
-	padding: 0;
 }
 
 .system{
-	height: 70vh;
-	display: flex;
+	height: 100%;
+  display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.left{
 	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding-left: 200px
+	float: left;
+	text-align: center;
 }
 
 .system h1{
-	text-align: center;
 	font-family: "Josefin Sans";
 	font-weight: bold;
 	color: #ffffff;
-	float:left;
-	font-size: 50px
-	padding: 0;
+	font-size: 50px;
+
 }
 .system h2 {
-	text-align: center;
 	font-family: "Josefin Sans";
 	font-weight: normal;
-	float: left;
 	color: #ffffff;
-	padding-bottom: 20px;
+	flex: 0 1 30%;
 }
 
-.system img{
+.right {
 	float: right;
-	padding: 0;
-
+	text-align: center;
+	flex-flow: column;
 }
 
-
-
-.systemLink{
-	display: inline-flex;
-	padding: 0px;
-
-
-}
 .systemLink a{
 	color: #0582ff;
-	margin-right: 0px;
-	padding: 0px;
-
-
 
 }
 
@@ -343,17 +337,37 @@ padding-left: 475px;
 
 }
 
+.more{
+	height: 70vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
 .more h1{
 	text-align: center;
+	padding-top: 60px;
 
 }
 
+.wrap{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 1px;
+}
 
 
 /* IMG CARSOL STUFF */
 /* Style the Image Used to Trigger the Modal */
 
 .myImg {
+	text-align: center;
 	 border-radius: 0px;
 	 width: 100%;
 	 height:auto;
