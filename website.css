@@ -127,17 +127,20 @@ canvas {
 /* ---- Structure of Website ---- */
 
 .space {
+	position:static;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200%;
+	width: auto;
   /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);*/ /*cool Sunset*/
 	/* background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 60%, #30D2BE 100%); */
 	/* background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%); */
 	background-image: linear-gradient(-225deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   background-size: cover;
   background-attachment: fixed;
-  padding: 0px;
+  padding-bottom: 35vh;
+	padding-top: 35vh;
 }
 
 .title{
@@ -180,13 +183,15 @@ canvas {
 }
 
 .me{
-	  height: 110vh;
+		position: relative;
+	  height: 110%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 1px;
+		text-align: justify;
 }
 .me h1{
 	text-align: center;
@@ -197,6 +202,11 @@ canvas {
 	text-align: justify;
 	font-family: "Josefin Sans";
 	font-weight: normal;
+	padding: 0px;
+	word-spacing: -2px;
+	word-wrap: break-word;
+	flex-wrap: wrap;
+
 }
 
 .blurb-container {
@@ -206,7 +216,11 @@ canvas {
 	align-items:flex-start;
 	max-height: 80%;
 	max-width: 50%;
-	padding-left: 25%
+	padding-left: 25%;
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 
 
 }
@@ -223,17 +237,20 @@ max-width: 50%;
 /* padding-left: 475px; */
 }
 .link{
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
+	display: inline-block;
+	padding: 0px;
+	margin-left:-1px;
+	margin-right: -1px;
+	text-align: justify;
+	flex-flow: wrap;
 
 
 }
 .link a{
 	display: block;
 	color: #2e2be2;
-	margin: 0;
 	padding:0;
+	text-align: justify;
 
 
 }
@@ -241,9 +258,9 @@ max-width: 50%;
 .link li{
 	color: #2e2be2;
 	list-style-type: none;
-	display: inline-grid;
-	margin: 0;
+	display: block;
 	padding: 0;
+	text-align: justify;
 
 }
 
