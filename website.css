@@ -209,7 +209,7 @@ canvas {
 
 }
 
-.blurb-container {
+blurb-container {
 	display: flex;
 	flex-flow: column;
 	text-align: justify;
@@ -219,7 +219,6 @@ canvas {
 	padding-left: 25%;
 	-webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 
 
@@ -238,11 +237,11 @@ max-width: 50%;
 }
 .link{
 	display: inline-block;
-	padding: 0px;
-	margin-left:-1px;
-	margin-right: -1px;
+	padding: 0;
 	text-align: justify;
 	flex-flow: wrap;
+	margin: 0;
+
 
 
 }
@@ -251,6 +250,7 @@ max-width: 50%;
 	color: #2e2be2;
 	padding:0;
 	text-align: justify;
+	margin: 0;
 
 
 }
@@ -261,6 +261,7 @@ max-width: 50%;
 	display: block;
 	padding: 0;
 	text-align: justify;
+	margin: 0;
 
 }
 
@@ -272,6 +273,13 @@ max-width: 50%;
 
 .link li:visited{
 	color:#2e2be2;
+}
+.link ol{
+	width: auto;
+    float: left;
+    display: block;
+		margin: 0;
+		padding: 0;
 }
 
 .bus{
@@ -307,28 +315,49 @@ max-width: 50%;
 	font-weight: normal;
 	color: #ffffff;
 	flex: 0 1 30%;
+	padding-bottom: 30px
 }
+
+
 
 .right {
 	float: right;
 	text-align: center;
 	flex-flow: column;
+
 }
 
 .systemLink a{
-	color: #0582ff;
+	color: #ffffff;
+
+	margin: 0;
 
 }
 
 .systemLink li{
 	padding: 21px 20px 19px;
   background-color: rgba(0,0,0,0.5);
-  display: inline-block;
+  display: inline;
 	list-style-type: none;
 	font-family:"Josefin Sans";
 	font-size: 20px;
+	margin: 0;
 
 
+
+}
+
+.systekLink li > a {
+	position: relative;
+	color: #ffffff;
+    text-decoration: none;
+		display: inline;
+}
+
+.systemLink  li > a:hover{
+	color:  #ffffff;
+	background-color: none;
+	text-decoration: none;
 }
 
 .systemLink a:visited {
@@ -472,8 +501,119 @@ max-width: 50%;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
 	 .modal-content {
 			 width: 100%;
 	 }
+
+	 .title h1{
+	 	font-family: "Josefin Sans";
+	 	font-size: 70px;
+	 	margin: 0 0 50px 0;
+	 	color: #ffffff
+	 }
+
+	 .title h2{
+	 	float: left;
+	 	font-family: "Josefin Sans";
+	 	font-size: 30px;
+	 	margin: 0 0 50px 0;
+	 	color: #ffffff
+	 }
+
+	 .title h3{
+	 	font-family: "Josefin Sans";
+	 	font-size: 30px;
+	 	margin: 0 0 50px 0;
+	 	color: #ffffff
+	 }
+
+	 .title h4{
+	 	float: left;
+	 	font-family: "Josefin Sans";
+	 	font-size: 30px;
+	 	margin: 0 0 50px 0;
+	 	color: #004e92
+	 }
+
+	 .me{
+	 		position: relative;
+	 	  height: 110%;
+	     display: flex;
+			 align-items: center;
+
+	     padding: 0px;
+	 }
+	 .me h1{
+	 	text-align: center;
+	 	font-family: "Josefin Sans";
+	 	font-weight: bold;
+	 }
+	 .me h2 {
+	 	font-family: "Josefin Sans";
+	 	font-weight: normal;
+	 	padding-bottom: 40px;
+		margin:auto;
+		text-align: left;
+		margin: 0;
+
+
+
+	 }
+
+
+	 .align {
+		position: relative;
+		display:block;
+	  align-items: center;
+	  max-height: 100%;
+	  max-width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
+
+
+	 }
+
+
+	 .img{
+	 	width: 100%;
+
+	 }
+	 .link{
+		 display: inline-block;
+	 }
+
+	 .system h1{
+		 padding-top: 20px;
+	 	font-family: "Josefin Sans";
+	 	font-weight: bold;
+	 	color: #ffffff;
+	 	font-size: 25px;
+
+	 }
+
+
+	 .system h2 {
+	 	font-family: "Josefin Sans";
+	 	font-weight: normal;
+	 	color: #ffffff;
+	 	flex: 0 1 30%;
+		max-width: 90%;
+	 	padding-bottom: 30px;
+		padding-left: 10px;
+
+	 }
+
+	 .wrap{
+	 	display: flex;
+	 	flex-flow: row;
+	 	align-items: center;
+	 	justify-content: space-around;
+	 	flex-wrap: wrap;
+	 	padding: 1px;
+		padding-right: 20px
+	 }
+
+
+
 }
